@@ -1,7 +1,9 @@
 [
   {
     "id": 1,
-    "name": "amal"
+    "name": "amal",
+    "username" : "user",
+    "password" : "password"
   },
   {
     "id": 2,
