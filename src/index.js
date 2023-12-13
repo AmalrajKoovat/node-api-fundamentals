@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 app.use(express.json());
 
@@ -13,9 +13,9 @@ app.use('/user', userRouter);
 app.use('/signin', signinRouter);
 app.use('/protected', protectedRouter);
 
-var server = app.listen(3000, function () {
-    var host = server.address().address
-    var port = server.address().port
+const server = app.listen(3000, function() {
+  const host = server.address().address;
+  const port = server.address().port;
 
-    console.log("Example app listening at http://%s:%s", host, port)
-})
+  console.log('Example app listening at http://%s:%s', host, port);
+});
